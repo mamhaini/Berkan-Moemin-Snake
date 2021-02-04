@@ -5,26 +5,24 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Private Variables
-    private float speed = 12.0f;
-    private float turnSpeed = 30.0f;
-    private float horizontalInput;
-    private float forwardInput;
+    public float speed;
+    private Rigidbody2D player;
+    private float moveHorizontal;
+    private float moveVertical;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        forwardInput = Input.GetAxis("Vertical");
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
+        player.AddForce(movement * speed);
 
-        // Move the vehicle foward
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        // Turn the vehicle
-        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
