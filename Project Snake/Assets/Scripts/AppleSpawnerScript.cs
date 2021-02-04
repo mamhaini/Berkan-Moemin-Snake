@@ -7,6 +7,7 @@ public class AppleSpawnerScript : MonoBehaviour
 
     public GameObject apple;
     float randX;
+    float randY;
     Vector2 whereToSpawn;
     public float spawnRate = 2f;
     float nextSpawn = 0.0f;
@@ -24,7 +25,8 @@ public class AppleSpawnerScript : MonoBehaviour
         {
             nextSpawn = Time.time + spawnRate;
             randX = Random.Range((float)-60f, 165f);
-            whereToSpawn = new Vector2(randX, transform.position.y);
+            randY = Random.Range((float)-40f, 100f);
+            whereToSpawn = new Vector2(randX, randY);
             Instantiate(apple, whereToSpawn, Quaternion.identity);
 
         }
