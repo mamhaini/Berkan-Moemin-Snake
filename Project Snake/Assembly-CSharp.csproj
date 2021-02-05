@@ -55,12 +55,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MolesSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\MolesCollect.cs" />
     <Compile Include="Assets\Scripts\AppleSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\GameTimer.cs" />
     <Compile Include="Assets\Scripts\DestroyObjectCollision.cs" />
+    <Compile Include="Assets\Scripts\PlayerScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

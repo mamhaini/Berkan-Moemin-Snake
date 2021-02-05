@@ -27,6 +27,7 @@ public class GameTimer : MonoBehaviour
             currentTime = 0;
         }
     }
+        // Game ends on timer 0 
     public void GameOver()
     {
         Debug.Break();  

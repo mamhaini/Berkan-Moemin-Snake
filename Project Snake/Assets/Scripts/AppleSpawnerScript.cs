@@ -18,7 +18,7 @@ public class AppleSpawnerScript : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Nextspawn location
     void Update()
     {
         if (Time.time > nextSpawn)
