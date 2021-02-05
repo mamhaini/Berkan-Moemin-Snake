@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\MolesCollect.cs" />
     <Compile Include="Assets\Scripts\AppleSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\GameTimer.cs" />
+    <Compile Include="Assets\Scripts\DestroyObjectCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
